@@ -86,9 +86,9 @@ public class MyWindow extends JFrame
 
                         SimpleDateFormat sfd=new SimpleDateFormat("hh : mm : ss a");
 
-                        String dateTime=sfd.format(d);
+                        String clockTime=sfd.format(d);
 
-                        clockLabel.setText(dateTime);
+                        clockLabel.setText(clockTime);
 
 //                        Thread.sleep(1000);
 //                        or we can write
