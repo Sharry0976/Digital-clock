@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -17,6 +19,14 @@ public class MyWindow extends JFrame
 
     MyWindow()
     {
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+               dispose();
+               System.exit(0);
+//                super.windowClosing(e);
+            }
+        });
         super.setTitle("My clock");
         super.setSize(500, 200);
         super.setLocation(300,50);
@@ -94,5 +104,4 @@ public class MyWindow extends JFrame
 
         thread.start();
     }
-
 }
