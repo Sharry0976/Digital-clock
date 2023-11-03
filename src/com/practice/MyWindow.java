@@ -28,7 +28,7 @@ public class MyWindow extends JFrame
             }
         });
         super.setTitle("My clock");
-        super.setSize(500, 200);
+        super.setSize(250, 200);
         super.setLocation(300,50);
         this.createGUI();
         super.setVisible(true);
