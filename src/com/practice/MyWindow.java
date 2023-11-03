@@ -2,8 +2,6 @@ package com.practice;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.text.SimpleDateFormat;
@@ -11,11 +9,10 @@ import java.util.Date;
 
 public class MyWindow extends JFrame
 {
-    private JLabel heading;
 
     private JLabel clockLabel;
 
-    private Font font=new Font("",Font.ITALIC,30);
+    private final Font font=new Font("",Font.ITALIC,30);
 
     MyWindow()
     {
@@ -36,7 +33,7 @@ public class MyWindow extends JFrame
 
     public void createGUI()
     {
-        heading=new JLabel("My clock");
+        JLabel heading = new JLabel("My clock");
         clockLabel=new JLabel("clock");
 
 
